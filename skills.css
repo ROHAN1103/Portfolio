@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,opsz,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: 'Nunito', sans-serif;
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+.heading{
+    text-align: center;
+    font-size: 4.5rem;
+    color: #e5e5e5;
+}
+section{
+    min-height: 100vh;
+    padding: 10rem 9% 2rem;
+}
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem 9%;
+    background: #e5e5e5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    color: #000000;
+}
+.navbar{
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+}
+.logo{
+    font-size: 2.5rem;
+    color: #000000;
+    font-weight: 700;
+    cursor: default;
+}
+h2{
+    position: relative;
+    font-size: 2.3rem;
+}
+span{
+    color: #bd7a16;
+}
+
+/*Header*/
+
+.main-con{    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.edu-con{
+    width: 60%;
+    height:auto;
+    background: #393939;
+    width: 100%;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+    gap: .8rem;
+    color: #fff;
+    border-radius: 0.8rem;
+    text-align: center;
+    align-items: center;
+}
+
+.edu-con i{
+    font-size: 2.6rem;
+    padding-bottom: .5rem;
+}
+.edu-con h3{
+    font-size: 2.6rem;
+    letter-spacing: 0.2rem;
+    padding-bottom: 0.8rem;
+    color: #bd7a16;
+}
+
+.edu-con p{
+    font-size: 1.6rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    line-height: 2.2rem;
+    text-align: justify;  
+}
+
+.edu-con .y{
+    font-size: 1.8rem;
+}
+ 
+.edu-con h4 a i{
+    padding-left: 1.2rem;
+}
+.btn{
+    display: inline-block;
+    padding: 1rem 2.8rem;
+    background:#bd7a16;
+    border-radius: 4rem;
+    font-size: 1.6rem;
+    color: #fff;
+    letter-spacing: .1rem;
+    font-weight: 600;
+    transition: 0.5s ease;
+    box-shadow: 0 0 1rem #c69f1f;
+}
+
+.btn:hover{
+    box-shadow: none;
+}
+
+.side-head{
+    text-align: left;
+    font-size: 1.8rem;
+    text-decoration: underline;
+}
+
+.side-head i, .text i{
+    font-size: 1.5rem;
+    padding-right: 1rem;
+    color: #e5e5e5;
+    text-decoration: none;
+}
+.text{
+    text-align: justify;
+}
+
+.y a i{
+    font-size: 1.5rem;
+    color: #fff;
+    text-decoration: none;
+    padding-left: 1rem;
+}
+
+.sub h4 i{
+    rotate: 90deg;
+    font-size: 1.2rem;
+    text-align:start;
+    padding-left: 0;
+    align-items:baseline;
+    padding-right: 1.3rem;
+    
+}
+
+.sub h4{  
+   font-size: 1.4rem;
+   text-align: left;
+   margin-left: 4.2rem;
+   text-decoration: underline;
+}
+
+.sub h4 a i{
+    color: #e5e5e5;
+    rotate: 0deg;
+    padding-left: 1.2rem;
+}
+
+.sub p{
+    padding-left: 6.5rem;
+}
+
+/*Footer*/
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2rem 9%;
+    background:#e5e5e5;
+}
+
+.footer-text{
+    font-size: 1.6rem;
+    color: #000000;
+}
+
+.footer-iconTop{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: .8rem 1rem;
+    background: #000000;
+    border-radius: .8rem;
+    transition: .5s ease;
+}
+
+.footer-iconTop a:hover{
+    box-shadow: 0 0 1rem #000000;
+}
+
+.footer-iconTop a i{
+    font-size: 2.4rem;
+    color:#e5e5e5;
+}
