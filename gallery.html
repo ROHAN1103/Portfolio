@@ -18,63 +18,55 @@
             justify-content: center;
             align-items: center;
             text-align: center;
-            left: 0;
-            margin: 20px 20px 0px 20px;
-          
+            margin: 20px;
         }
 
         #container .heading {
-            width: 50%;
-            padding-bottom: 50px;
-
+            width: 100%;
+            max-width: 800px;
+            padding-bottom: 30px;
         }
 
         #container .heading h1 {
-            padding-top: 20px;
             font-weight: bolder;
-            padding-bottom: 10px;
-
-            font-size: 50px;
+            font-size: 3rem;
+            padding: 20px 0 10px;
             border-bottom: 4px solid #222;
         }
 
         #container .heading h1 span {
             letter-spacing: 5px;
-            font-weight: 150;
+            font-weight: 300;
             color: #444242;
-            
-
-        }
-        #box{
-           
-            left: 15%;
         }
 
-        #container #box {
+        #box {
             display: flex;
-            flex-direction: row;
-            justify-content: space-between;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1rem;
+            width: 100%;
+            max-width: 1200px;
         }
 
-        #container #box .col1 {
+        /* Each column (desktop default 3 columns) */
+        #box .col1 {
+            flex: 1 1 30%;
             display: flex;
             flex-direction: column;
-            width: 32.5%;
-
         }
 
-        #container #box .col1 img {
+        #box .col1 img {
             width: 100%;
             padding-bottom: 12px;
             border-radius: 5px;
-
         }
 
         .ba {
             display: flex;
             justify-content: center;
             background: black;
-            margin: 40px 0 70px 0;
+            margin: 40px 0 70px;
             padding: 15px 40px;
             border-radius: 5px;
         }
@@ -84,64 +76,37 @@
             color: white;
             font-size: 1.2em;
             font-weight: bold;
-
         }
 
         .col1 img:hover {
             transform: scale(1);
-            filter: blur(0px)
+            filter: blur(0px);
         }
 
-      
-       
+        /* Responsive breakpoint: Mobile (1 column) */
+        @media (max-width: 768px) {
+            #box {
+                flex-direction: column;
+                align-items: center;
+            }
 
-        .toggle {
-            position: absolute;
-            left: 102%;
-            top: 15px;
-        }
+            #box .col1 {
+                flex: 1 1 100%;
+                width: 100%;
+                max-width: 500px;
+            }
 
-        .toggle span {
-            display: block;
-            background-color: black;
-            width: 30px;
-            height: 5px;
-            margin: 3px;
-        }
-
-        #sidebar.active {
-            left: 0;
-        }
-        #sidebar header{
-            font-weight: bold;
-            
-        }
-        #check{
-            display: none;
-        }
-        label #btn,label #cancel{
-            position: absolute;
-            cursor: pointer;
-            background: #042331;
-            border-radius: 3px;
-        }
-        label #btn{
-            left: 40px;
-            top: 25px;
-            font-size: 35px;
-            color: white;
-            padding: 6px 12px;
+            #container .heading h1 {
+                font-size: 2.4rem;
+            }
         }
     </style>
-
-
 </head>
 
 <body>
     <div id="container">
         <div class="heading">
             <h1>MY <span>Clicks</span></h1>
-
         </div>
 
         <div id="box">
@@ -162,9 +127,7 @@
                 <img src="42.jpg">
                 <img src="43.jpg">
                 <img src="49.jpg">
-                <img src="44.jpg">
-                <img src="54.jpg">
-
+                <img src="40.jpg">
             </div>
             <div class="col1">
                 <img src="19.jpg">
@@ -182,13 +145,10 @@
                 <img src="37.jpg">
                 <img src="38.jpg">
                 <img src="39.jpg">
-                <img src="40.jpg">
+                <img src="57.jpg">
                 <img src="50.jpg">
                 <img src="55.jpg">
-
-
             </div>
-
             <div class="col1">
                 <img src="11.jpg">
                 <img src="12.jpg">
@@ -210,18 +170,12 @@
                 <img src="52.jpg">
                 <img src="51.jpg">
                 <img src="53.jpg">
-                <img src="56.jpg">
-
-
             </div>
-
-
         </div>
         <div class="ba">
             <a href="index.html">Back</a>
         </div>
     </div>
-
 </body>
 
 </html>
